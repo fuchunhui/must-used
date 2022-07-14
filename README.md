@@ -1,2 +1,2 @@
 # must-be
-we must use the specified package management tool
+we must use the specified package management tool.

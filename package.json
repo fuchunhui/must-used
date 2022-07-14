@@ -1,5 +1,5 @@
 {
-  "name": "must-be",
+  "name": "must-used",
   "version": "0.1.0",
   "description": "we must use the specified package management tool.",
   "main": "index.js",

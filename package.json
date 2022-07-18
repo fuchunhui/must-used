@@ -1,6 +1,6 @@
 {
   "name": "must-used",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "we must use the specified package management tool.",
   "main": "index.js",
   "bin": "index.js",

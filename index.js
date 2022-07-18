@@ -6,13 +6,18 @@ if (!agent) {
   process.exit(1);
 }
 
-const pname = agent.match(/^\w+/g)[0];
+const current = agent.match(/^\w+/g)[0];
 
-console.log(pname);
+const withList = process.argv.slice(2);
 
-const argv = process.argv.slice(2);
+if (withList.length === 0) {
+  console.error('check your command please.');
+  process.exit(1);
+}
 
-console.log(argv);
+const used = withList[0];
 
-
-// 非指定环境，就报错，强制中断流程
+if (used && current !== used) {
+  console.error(`we need to use [${used}], but [${current}] in use now.`);
+  process.exit(1);
+}
